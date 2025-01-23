@@ -104,7 +104,7 @@ a:any-link {
 }
 
 .meet-header__nav {
-  padding: 0rem 8.0313rem;
+  padding: 0rem 5rem;
 }
 
 .meet-header__logo img {
@@ -134,7 +134,6 @@ a:any-link {
   font: var(--TEXT-PRESET-1-MOB);
   color: var(--SLATE-900);
   max-width: 305px;
-  margin-bottom: 1.5rem;
 }
 
 .meet-header-hero__description {
@@ -236,6 +235,7 @@ a:any-link {
   letter-spacing: var(--TEXT-PRESET-3-LS);
   color: var(--CYAN-600);
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .meet-main-features__title {
@@ -318,4 +318,218 @@ a:any-link {
   color: var(--PURPLE-300);
   display: inline-block;
   margin-left: 0.25rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /* MEET-HEADER */
+  .meet-header {
+    padding: 3rem 0rem 4rem;
+  }
+
+  .meet-header-hero {
+    gap: 4.5rem;
+  }
+
+  .meet-header-hero__mob-tab img {
+    max-width: 820px;
+  }
+
+  .meet-header-hero__title {
+    font: var(--TEXT-PRESET-1-TBT);
+    max-width: 448.3px;
+  }
+
+  .meet-header-hero__description {
+    max-width: 448.3px;
+  }
+
+  .meet-header-hero__buttons {
+    flex-flow: row;
+    gap: 17px;
+  }
+
+  /* MEET-MAIN */
+  .meet-main {
+    padding: 8.5rem 2rem 4rem 2rem;
+  }
+
+  .meet-main-features__image-group {
+    gap: 1.5rem;
+    min-width: 680px;
+  }
+
+  .meet-main-features__image img {
+    max-width: 152px;
+  }
+
+  .meet-main-features__subtitle {
+    font: var(--TEXT-PRESET-3-TBT);
+  }
+
+  .meet-main-features__title {
+    font: var(--TEXT-PRESET-2-TBT);
+    max-width: 455px;
+  }
+
+  .meet-main-features__description {
+    max-width: 504px;
+  }
+
+  /* MEET-FOOTER */
+  .meet-footer {
+    height: 320px;
+    background-image: url("./images/tablet/image-footer.jpg");
+  }
+
+  .meet-footer__overlay {
+    height: 320px;
+  }
+
+  .section-marker-wrapper {
+    bottom: 292px;
+  }
+
+  .meet-footer__title {
+    font: var(--TEXT-PRESET-2-TBT);
+    max-width: 504px;
+  }
+
+  .meet-footer__description {
+    max-width: 504px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  /* MEET-HEADER */
+  .meet-header {
+    padding: 5rem 0rem 4rem;
+  }
+
+  .meet-header-hero {
+    flex-flow: row;
+    gap: 127.85px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+
+  .meet-header-hero__mob-tab {
+    display: none;
+  }
+
+  .meet-header-hero__dsk-left,
+  .meet-header-hero__dsk-right {
+    display: block;
+    position: absolute;
+  }
+
+  .meet-header-hero__dsk-left {
+    left: -26px;
+  }
+
+  .meet-header-hero__dsk-right {
+    right: -26px;
+  }
+
+  .meet-header-hero__dsk-left img,
+  .meet-header-hero__dsk-right img {
+    max-width: 394px;
+  }
+
+  .meet-header-hero__container {
+    gap: 32px;
+  }
+
+  .meet-header-hero__title {
+    font: var(--TEXT-PRESET-1-DSK);
+    max-width: 448.3px;
+  }
+
+  .meet-header-hero__description {
+    font: var(--TEXT-PRESET-4-DSK);
+    max-width: 448.3px;
+  }
+
+  .meet-header-hero__buttons {
+    flex-flow: row;
+    gap: 1.0625rem;
+  }
+
+  .meet-header-hero__button--primary:hover,
+  .meet-header-hero__button--primary:focus-visible {
+    background-color: #71c0d4;
+  }
+
+  .meet-header-hero__button--secondary:hover,
+  .meet-header-hero__button--secondary:focus-visible {
+    background-color: #b18bdd;
+  }
+
+  /* MEET-MAIN */
+  .meet-main {
+    padding: 8.5rem 5rem 4.5rem 5rem;
+  }
+
+  .meet-main-features__image-group {
+    gap: 2rem;
+    min-width: 1120px;
+  }
+
+  .meet-main-features__image img {
+    max-width: 256px;
+  }
+
+  .meet-main-features__subtitle {
+    font: var(--TEXT-PRESET-3-DSK);
+  }
+
+  .meet-main-features__title {
+    font: var(--TEXT-PRESET-2-DSK);
+    max-width: 445px;
+  }
+
+  .meet-main-features__description {
+    font: var(--TEXT-PRESET-4-DSK);
+    max-width: 544px;
+  }
+
+  /* MEET-FOOTER */
+  .meet-footer {
+    height: 312px;
+    padding: 7rem 80px;
+    background-image: url("./images/desktop/image-footer.jpg");
+  }
+
+  .meet-footer__overlay {
+    height: 312px;
+  }
+
+  .section-marker-wrapper {
+    bottom: 284px;
+  }
+
+  .meet-footer__text-content {
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .meet-footer__title {
+    font: var(--TEXT-PRESET-2-DSK);
+    max-width: 445px;
+    text-align: left;
+  }
+
+  .meet-footer__description {
+    font: var(--TEXT-PRESET-4-DSK);
+    max-width: 355px;
+    text-align: left;
+  }
+
+  .meet-footer__button:hover,
+  .meet-footer__button:focus-visible {
+    background-color: #b18bdd;
+  }
 }
